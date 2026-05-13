@@ -1,0 +1,22 @@
+llm:
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  api_key: "sk-e365d480f719416e8f4e317b7fa03ca1"
+  model_name: "qwen-plus"
+
+embedding:
+  model_name: "BAAI/bge-small-zh-v1.5"
+  model_path: "../../../models/BAAI/bge-small-zh-v1.5"
+  dimensions: 512
+
+vectorstore:
+  persist_directory: "./data/chromadb"
+
+chunk:
+  chunk_size: 256
+  chunk_overlap: 20
+
+rerank:
+  enabled: true
+  top_k: 5
+
+device: "cpu"
